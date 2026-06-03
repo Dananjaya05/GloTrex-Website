@@ -68,5 +68,22 @@
         </div>
         <p style="color: #666;">&copy; 2026 GIOTrex Technologies. UAE Smart Home Specialists.</p>
     </footer>
+
+    <script>
+function sendToWhatsApp() {
+    let name = document.querySelector('input[type="text"]').value;
+    let service = document.querySelector('select').value;
+    let message = document.querySelector('textarea').value;
+
+    let url = "https://wa.me/971558520699?text="
+        + "New Website Inquiry%0A%0A"
+        + "Name: " + name + "%0A"
+        + "Service: " + service + "%0A"
+        + "Message: " + message;
+
+    window.open(url, "_blank");
+}
+</script>
+    
 </body>
 </html>
